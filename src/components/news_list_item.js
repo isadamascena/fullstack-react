@@ -1,15 +1,10 @@
 import React from 'react';
-import { css } from 'glamor';
+import classes from '../css/styles.module.css';
 
 const NewsItem = ({item}) => {
-    const news_item = css({
-        padding: '20px',
-        boxSizing: 'border-box',
-        borderBottom: '1px solid grey'
-    });
     
     return (
-        <div className={news_item}>
+        <div className={classes.news_item}>
             <h3>{item.title}</h3>
             <div>
                 {item.feed}
