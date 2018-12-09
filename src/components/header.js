@@ -3,10 +3,16 @@ import '../css/styles.css'
 
 class Header extends Component {
 
-    inputChangeHandler(event){
-        console.log(event.target.value)
+    state = {
+        keywords: ''
     }
-    
+
+    inputChangeHandler = (event) =>{
+        this.setState({
+            keywords: event.target.value
+        })
+    }
+
     render() {
         
         return (
